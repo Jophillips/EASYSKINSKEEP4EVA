@@ -1,0 +1,91 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+
+	<title>EASY SKINS KEEP 4 EVA</title>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/ezslots.js"></script>
+
+<link href="css/ezslots.css" rel="stylesheet" type="text/css" />
+<link href="css/body.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+
+
+
+
+
+<center>
+
+	<div class="container">
+EASY SKINS KEEP 4 EVA
+		<div id="ezslots1"></div>
+			<button id="winwinwin1" class="spinButton">Spin</button> <----- Click here
+			<br>
+			$ <input type="text" class="skinValue" id="skinValue" value="10.00">
+			<br> Total Saved: $ <i id="total">0</i>
+	</div>
+
+
+
+	<div class="container">
+
+
+	Hi der! Dis iz da best gambling site in da world for all U peeps wit da gambles addictionz. Just put in da valuez of the itemz U wish to gambles and U will never losez them. 2 B 100% liek legit & nevar leik cheat u out of ur skinz hur R da oddz. <br> 	<br>	Odds:<br> 0.00% Win,<br> 100.00% Keep, <br>0.00% Lose. <br><br> U will alzo save da house feez b/c I will not takez dem b/c dis site is 100% no-4-profitz. 
+
+	</div>
+
+
+	</center>
+
+
+
+<script>
+
+
+	const multiplier = 0.0526;
+	var totalSaved = 0; 
+
+	
+$(function(){
+
+	var numbers = ['0','1','2','3'];
+	var images = ['<img src="images/spin.png">','<img src="images/winz.png">','<img src="images/lose.png">','<img src="images/keep.png">'];
+	var misc = ['!','K','*','#','@','$'];
+
+	var ezslot1 = new EZSlots("ezslots1",{"reelCount":3,"startingSet":[0,0,0],"winningSet":[3,3,3],"symbols":images,"height":150,"width":300});
+
+
+
+	$("#winwinwin1").click(function(){ 
+		
+		ezslot1.win();
+
+		skinValue = document.getElementById("skinValue").value;
+
+		totalSaved = parseFloat(parseFloat(totalSaved) + (skinValue * multiplier)).toFixed(2);
+
+		document.getElementById('total').innerHTML = totalSaved;   
+
+
+	 }
+	 );
+
+
+});
+
+
+
+
+</script>
+
+</body>
+
+</html>
